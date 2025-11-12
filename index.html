@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davi Reis — Portfólio</title>
+  <meta name="description" content="Portfólio de Davi Reis — Técnico em Informática e estudante de Análise e Desenvolvimento de Sistemas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Em andamento!</h1>
+  
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container">
+      <a href="#" class="logo"></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navegacao" id="navegacao">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    
+    <!-- SEÇÃO HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-conteudo">
+          <div class="hero-texto">
+            <h1>Davi Reis</h1>
+            <p class="destaque">
+              Sou <strong>Davi Reis</strong> — Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> | Técnico em Informática.
+            </p>
+            <div class="hero-botoes">
+              <a class="botao primario" href="#projetos">Ver projetos</a>
+              <a class="botao" href="#contato">Contato</a>
+            </div>
+          </div>
+          <div class="hero-avatar">
+            <div class="avatar">DR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divisor">
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+      <div class="container estreito">
+        <h2 class="titulo-secao">Sobre</h2>
+        <p>
+          Minha abordagem privilegia clareza, manutenibilidade e evolução contínua. Acredito que decisões simples,
+          consistentes e guiadas por propósito resultam em produtos melhores e sustentáveis.
+        </p>
+        <p>
+          Interesses: desenvolvimento web (front/back), versionamento com Git, testes e processos que mantêm o
+          software saudável ao longo do tempo.
+        </p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Habilidades</h2>
+        <ul class="lista-habilidades">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git / GitHub</li>
+          <li>Boas Práticas</li>
+          <li>UX Básico</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao">Projetos selecionados</h2>
+        <div class="grade-projetos">
+          
+          <article class="cartao">
+            <div class="cartao-capa"></div>
+            <div class="cartao-corpo">
+              <h3>Projeto A</h3>
+              <p>Solução objetiva para um problema específico, com código limpo e interface direta.</p>
+            </div>
+            <div class="cartao-rodape">
+              <a class="botao pequeno primario" href="#">Ver projeto</a>
+              <a class="botao pequeno" href="#">Código</a>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao-capa"></div>
+            <div class="cartao-corpo">
+              <h3>Projeto B</h3>
+              <p>Estrutura pensada para escalabilidade, testes básicos e documentação inicial.</p>
+            </div>
+            <div class="cartao-rodape">
+              <a class="botao pequeno primario" href="#">Ver projeto</a>
+              <a class="botao pequeno" href="#">Código</a>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="cartao-capa"></div>
+            <div class="cartao-corpo">
+              <h3>Projeto C</h3>
+              <p>Experimento contínuo de aprendizado focado em qualidade e clareza.</p>
+            </div>
+            <div class="cartao-rodape">
+              <a class="botao pequeno primario" href="#">Ver projeto</a>
+              <a class="botao pequeno" href="#">Código</a>
+            </div>
+          </article>
+
+        </div>
+        <p class="nota">Mais projetos serão adicionados ao longo do tempo, priorizando qualidade.</p>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+      <div class="container estreito">
+        <h2 class="titulo-secao">Contato</h2>
+        <p>Aberto a oportunidades e colaborações. Fale comigo:</p>
+        <ul class="lista-contato">
+          <li><a href="mailto:davireis.dev@example.com">davireis.dev@example.com</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+      <p>© <span id="ano">2024</span> Davi Reis. Construído com foco em simplicidade e qualidade.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
