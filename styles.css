@@ -94,11 +94,24 @@ body {
 
 .hero-texto h1 {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+.hero-texto .nome {
   background: linear-gradient(135deg, #ffffff 0%, #00b8ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.hero-texto .subtitulo {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.5em;
+  font-weight: 600;
+  color: #a0a0a0;
+  letter-spacing: 0.02em;
+}
+
 .destaque {
   font-size: 1.125rem;
   color: #a0a0a0;
@@ -111,13 +124,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 30px rgba(0, 132, 255, 0.4);
-  animation: flutuar 6s ease-in-out infinite;
   border: 3px solid rgba(0, 132, 255, 0.2);
-}
-
-@keyframes flutuar {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
 }
 
 .botao {
@@ -221,6 +228,7 @@ body {
 .cartao-corpo p {
   color: #a0a0a0;
   line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
 
 .rodape {
@@ -230,6 +238,39 @@ body {
   border-top: 1px solid rgba(0, 132, 255, 0.2);
   color: #a0a0a0;
   font-size: 0.9rem;
+}
+
+.lista-limpa {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.lista-limpa li + li {
+  margin-top: 0.35rem;
+}
+
+.curriculo-acoes {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 2rem;
+  justify-content: center;
+}
+
+.cartao-rodape {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 2rem 1.5rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(0, 132, 255, 0.12);
+}
+
+.botoes-contato {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -245,39 +286,31 @@ body {
   }
 }
 
-.grade-icones {
+.competencias {
+  list-style: none !important;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  padding-left: 0;
+  margin-left: 0;
+  margin: 1.5rem 0 0;
   display: flex;
+  gap: 0.75rem;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  font-size: 4rem;
-  margin-top: 3rem;
-  transition: 0.3s;
 }
 
-.grade-icones i {
-  transition: transform 0.3s, color 0.3s;
+.competencias li {
+  list-style: none !important;
+  display: inline-flex;
+  align-items: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.grade-icones i:hover {
-  transform: scale(1.15);
-  color: #4da6ff;
-}
+.competencias li::marker { content: '' !important; }
+.competencias li::before { content: none !important; }
 
-#contato {
-  padding: 6rem 0;
-}
-
-#contato p {
-  font-size: 1.2rem;
-  color: #a0a0a0;
-  margin-bottom: 3rem;
-  line-height: 1.8;
-}
-
-.botoes-contato {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
